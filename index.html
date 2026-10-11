@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive en diferentes dispositivos -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito de compras</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Archivo que estandariza estilos entre navegadores -->
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header"> <!-- Define el encabezado principal del sitio -->
+    <div class="container"> <!-- Clase del framework CSS para organizar -->
+        <div class="row">  
+            <div class="four columns">
+                <img src="img/skull.png" id="logo" width="50%" height="80%">
+            </div>
+            <div class="two columns u-pull-right">
+                <!-- <ul>
+                    <li class="submenu">-->
+                        <div class="submenu">
+                            <div id="img-carrito">
+                                <a class=""href="#">
+                                    <samp class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--solar mnl_icon_root MuiBox-root css-17b32sj" width="2em" height="2em" viewBox="0 0 24 24">
+                                        <path fill="currentColor" fill-rule="evenodd" d="M10 2.25a1.75 1.75 0 0 0-1.582 1c-.684.006-1.216.037-1.692.223A3.25 3.25 0 0 0 5.3 4.563c-.367.493-.54 1.127-.776 1.998l-.047.17l-.513 2.964c-.185.128-.346.28-.486.459c-.901 1.153-.472 2.87.386 6.301c.545 2.183.818 3.274 1.632 3.91C6.31 21 7.435 21 9.685 21h4.63c2.25 0 3.375 0 4.189-.635c.814-.636 1.086-1.727 1.632-3.91c.858-3.432 1.287-5.147.386-6.301a2.186 2.186 0 0 0-.487-.46l-.513-2.962l-.046-.17c-.237-.872-.41-1.506-.776-2a3.25 3.25 0 0 0-1.426-1.089c-.476-.186-1.009-.217-1.692-.222A1.75 1.75 0 0 0 14 2.25zm8.418 6.896l-.362-2.088c-.283-1.04-.386-1.367-.56-1.601a1.75 1.75 0 0 0-.768-.587c-.22-.086-.486-.111-1.148-.118A1.75 1.75 0 0 1 14 5.75h-4a1.75 1.75 0 0 1-1.58-.998c-.663.007-.928.032-1.148.118a1.75 1.75 0 0 0-.768.587c-.174.234-.277.56-.56 1.6l-.362 2.089C6.58 9 7.91 9 9.685 9h4.63c1.775 0 3.105 0 4.103.146M8 12.25a.75.75 0 0 1 .75.75v4a.75.75 0 0 1-1.5 0v-4a.75.75 0 0 1 .75-.75m8.75.75a.75.75 0 0 0-1.5 0v4a.75.75 0 0 0 1.5 0zM12 12.25a.75.75 0 0 1 .75.75v4a.75.75 0 0 1-1.5 0v-4a.75.75 0 0 1 .75-.75" clip-rule="evenodd">
+                                        </path>
+                                    </svg>
+                                </samp>
+                            </a>
+                            </div>
+                            <div id="carrito">
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                    <a href="#" id="vasiar-carrito" clas ="button u-full-width"> Vaciar mi carrito</a>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div clas="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h1></h1>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="lista-libro" class="container">
+        <h4 id="encabezado" class="encabezado">ALBUNES DE ONE OK ROCK</h4>
+        <p class="">Explora y compra los albunes mas populares de la banda japonesa One Ok Rock</p>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/35xxxv.jpeg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Album: 35xxxv</h4>
+                        <p>Año: 2015 </p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$350 <span class="u-pull-right">$105</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div> <!-- .card -->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/ambitions.jpeg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Album: Ambitions</h4>
+                            <p>Año: 2017</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$380 <span class="u-pull-right">$135</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!-- .card -->
+            </div>
+            <div class="four columns"> 
+                    <div class="card">
+                        <img src="img/descarga.jpeg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Album: Eye of the Storm</h4>
+                            <p>Año: 2019</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$390 <span class="u-pull-right">$155</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--card-->
+            </div>
+
+        </div> <!--row-->
+        <div class="row">
+            <div class="four columns"> 
+                <div class="card">
+                    <img src="img/luxurydisease.jpeg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Album: Luxury Disease</h4>
+                        <p>Año: 2022</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$400 <span class="u-pull-right">$225</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--card-->
+            </div>
+            <div class="four columns"> 
+                <div class="card">
+                    <img src="img/jinseixboku.jpeg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Album: JinseixBoku</h4>
+                        <p>Año: 2013</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$330 <span class="u-pull-right">$145</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--card-->
+             </div>
+             <div class="four columns"> 
+                <div class="card">
+                    <img src="img/zeita.jpeg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Zeitakubyo</h4>
+                        <p>Año: 2007</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$260 <span class="u-pull-right">$95</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--card-->
+        </div>
+        <div class="four columns"> 
+            <div class="card">
+                <img src="img/detox.jpeg" class="imagen-curso u-full-width">
+                <div class="info-card">
+                    <h4>Album: DETOX</h4>
+                    <p>Año: 2025</p>
+                    <img src="img/estrellas.png">
+                    <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                </div>
+            </div> <!--card-->
+    </div>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class=" four columns">
+                    <nav id="secundaria" class="menu">
+                        <h6></h6>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/carrito.js"></script>
+    
+        
+</header>
+</body>
+</html>

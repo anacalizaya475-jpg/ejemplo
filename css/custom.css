@@ -1,0 +1,306 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-image:url(../img/az1.jpeg);
+    height: 500 px;
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+header {
+    padding: 10px 0 0 0;
+    /* background: radial-gradient(87% 275% at 6% 15%, #102054 0, #11366b 23%, #114c80 40%, #1d5a9e 58%, #1e639c 66%, #246dbf 75%, #1c65a9 83%, #2458a0 93%, #1a4a98 100%); */
+    background: black;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+.blanco{
+    color: white;
+
+}
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+#hero {
+    background-image:url(../img/123.jpg);
+    height: 400px;
+    background-size: cover;
+}
+#encabezado {
+    margin: 30px 0;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+}
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    border-radius: 9px;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.contenido-hero {
+    margin-top: 150px;
+    color: white;
+}
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right:0;
+    top:0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border:none;
+}
+
+
+.barra {
+    padding: 20px 0;
+    background: radial-gradient(87% 275% at 6% 15%, #102054 0, #11366b 23%, #114c80 40%, #1d5a9e 58%, #1e639c 66%, #246dbf 75%, #1c65a9 83%, #2458a0 93%, #1a4a98 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+}
+
+.barra p {
+    margin:0;
+    color: white;
+}
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom:0;
+    }
+}
+.icono1 {
+    background-image: url(../img/icono1.png);
+}
+.icono2 {
+    background-image: url(../img/icono2.png);
+}
+.icono3 {
+    background-image: url(../img/icono3.png);
+}
+
+#lista-cursos .row {
+    margin-bottom:20px;
+}
+.agregar-carrito {
+    margin:10px 0;
+}
+
+.card {
+    text-align: center;
+    border: 0px solid #e1e1e1;
+    background: white;
+    border-radius: 5px;
+}
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+       
+    }
+}
+.info-card  {
+    padding: 10px 20px;
+}
+
+.info-card p, 
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+.footer {
+    
+    padding: 1%;
+}
+.footer .menu a{
+display: block;
+margin-bottom: 5px;
+text-decoration: none;
+}
+/* ===== MEJORAS PARA LOS ALBUMES DE ONE OK ROCK ===== */
+
+/* Contenedor principal de los álbumes */
+#lista-libro {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Espacio entre las filas */
+#lista-libro .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+/* Todas las columnas se estiran por igual */
+#lista-libro .four.columns {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Tarjetas del mismo tamaño */
+#lista-libro .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+#lista-libro .card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imágenes uniformes */
+#lista-libro .card > img:first-child {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+/* Contenido de cada tarjeta */
+#lista-libro .info-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+/* Nombres de los álbumes */
+#lista-libro .info-card h4 {
+    min-height: 42px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+}
+
+/* Año del álbum */
+#lista-libro .info-card p {
+    margin-bottom: 10px;
+}
+
+/* Estrellas */
+#lista-libro .info-card img {
+    max-width: 100px;
+    height: auto;
+    margin: 5px auto;
+}
+
+/* Precios alineados */
+#lista-libro .info-card .precio {
+    margin-top: auto;
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Precio anterior */
+#lista-libro .info-card .precio > span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d71920;
+}
+
+/* Botones del carrito alineados */
+#lista-libro .agregar-carrito {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 549px) {
+    #lista-libro .four.columns {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #lista-libro .card > img:first-child {
+        height: 240px;
+    }
+}
